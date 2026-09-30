@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISKCON Wallet & Bhakti Currency | Integrating the Global Spiritual Economy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGold: '#FACC15',
+                        brandDark: '#111827',
+                        brandYellowBg: '#FEFCE8',
+                        brandSaffron: '#D97706',
+                        bktPurple: '#7E22CE',
+                        bktLightPurple: '#A855F7'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .cinzel { font-family: 'Cinzel', serif; }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(17,24,39,0.95) 0%, rgba(31,41,55,0.9) 100%), url('https://images.unsplash.com/photo-1609137144813-7524e4c5b364?q=80&w=1600&auto=format&fit=crop') center/cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-amber-200 selection:text-gray-900">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 rounded-full bg-amber-500 flex items-center justify-center font-black cinzel text-white shadow-md border-2 border-amber-400">
+                        <i class="fa-solid fa-om text-gray-900"></i>
+                    </div>
+                    <div>
+                        <span class="cinzel font-bold text-lg tracking-wider text-gray-900 block leading-tight">ISKCON WALLET</span>
+                        <span class="text-xs text-amber-600 font-semibold tracking-widest uppercase">Bhakti Currency</span>
+                    </div>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
+                <a href="#vision" class="hover:text-amber-600 transition">Vision</a>
+                <a href="#impact" class="hover:text-amber-600 transition">Global Impact</a>
+                <a href="#solution" class="hover:text-amber-600 transition">Solution</a>
+                <a href="#opportunity" class="hover:text-amber-600 transition">Opportunity</a>
+                <a href="#founder" class="hover:text-amber-600 transition">Founder & CV</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="whitepaper.html" class="bg-amber-500 hover:bg-amber-400 text-gray-950 px-4 py-2.5 rounded-full font-bold transition text-sm flex items-center space-x-2 shadow">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Whitepaper</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative hero-bg text-white pt-32 pb-24 lg:pt-44 lg:pb-36 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#FACC15_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 bg-amber-500/20 border border-amber-400/30 px-4 py-1.5 rounded-full text-amber-300 text-sm font-medium mb-6">
+                <i class="fa-solid fa-om"></i>
+                <span>Integrating the Global Spiritual Economy</span>
+            </div>
+            <h1 class="cinzel text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-tight">
+                ISKCON WALLET <br>
+                <span class="text-amber-400">& BHAKTI CURRENCY</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-gray-300 mb-10 font-light">
+                A Stellar-based Web3 infrastructure unifying spiritual traditions, commerce, and sustainable networks worldwide.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#solution" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-1">
+                    Explore Solution
+                </a>
+                <a href="whitepaper.html" class="w-full sm:w-auto bg-gray-800/80 hover:bg-gray-800 text-white border border-gray-700 px-8 py-4 rounded-xl font-medium transition flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-book-open text-amber-400"></i>
+                    <span>Read Whitepaper</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-bold tracking-widest uppercase text-sm block mb-2">01 — A Dream and a Mission</span>
+                <h2 class="cinzel text-3xl sm:text-4xl font-bold text-gray-900">Srila Prabhupada's Vision</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+                    <p>
+                        Fifty-nine years ago, a master came to the West at the age of 70 on a cargo ship, with only $6 in his pocket, a few copies of his books in his suitcase, and a dream: to found a global spiritual society with an educational system, temples, commerce, protection for devotees, self-sustainable rural projects, spiritual tourism, and much more.
+                    </p>
+                    <p>
+                        All based on <strong>simple living and elevated thinking</strong>, with service to God (Krishna) at its epicenter. In 12 years, before he departed this world, he fulfilled his mission!
+                    </p>
+                    <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl">
+                        <p class="text-amber-950 font-medium text-base">
+                            "Connecting millions worldwide through high-speed, ultra-low cost Stellar financial integration."
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-amber-500 to-yellow-300 rounded-2xl blur-lg opacity-20"></div>
+                    <div class="relative bg-gray-900 rounded-2xl overflow-hidden shadow-2xl border border-gray-800 p-8 text-white">
+                        <h3 class="cinzel text-2xl font-bold text-amber-400 mb-6">ISKCON Global Ecosystem</h3>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="border-b border-gray-800 pb-4">
+                                <div class="text-3xl font-black text-white">5M+</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Engaged Followers</div>
+                            </div>
+                            <div class="border-b border-gray-800 pb-4">
+                                <div class="text-3xl font-black text-white">800+</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Temples & Centers</div>
+                            </div>
+                            <div class="border-b border-gray-800 pb-4">
+                                <div class="text-3xl font-black text-white">1K+</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Restaurants & Stores</div>
+                            </div>
+                            <div class="border-b border-gray-800 pb-4">
+                                <div class="text-3xl font-black text-white">8B+</div>
+                                <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Food For Life Portions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="py-20 bg-gray-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-600 font-bold tracking-widest uppercase text-sm block mb-2">02 — Global Presence & Revenue</span>
+                <h2 class="cinzel text-3xl sm:text-4xl font-bold text-gray-900">An Active Global Economy</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 text-center">
+                    <div class="text-3xl font-black text-amber-600 mb-2">60+</div>
+                    <div class="font-bold text-gray-900 mb-1">Ecovillages & Farms</div>
+                    <p class="text-xs text-gray-600">Self-sustainable rural projects across the globe.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 text-center">
+                    <div class="text-3xl font-black text-amber-600 mb-2">50+</div>
+                    <div class="font-bold text-gray-900 mb-1">Educational Institutions</div>
+                    <p class="text-xs text-gray-600">Schools, academies, and spiritual study centers.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 text-center">
+                    <div class="text-3xl font-black text-amber-600 mb-2">8B+</div>
+                    <div class="font-bold text-gray-900 mb-1">Free Meals Distributed</div>
+                    <p class="text-xs text-gray-600">Food For Life philanthropic program.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200 text-center">
+                    <div class="text-3xl font-black text-amber-600 mb-2">$10M+</div>
+                    <div class="font-bold text-gray-900 mb-1">Estimated Annual Revenue</div>
+                    <p class="text-xs text-gray-600">Circular economy commerce and donations in 2024.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solution" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="text-amber-600 font-bold tracking-widest uppercase text-sm block mb-2">03 — Challenges & Solution</span>
+                <h2 class="cinzel text-3xl sm:text-4xl font-bold text-gray-900">The Dream Came True, But With Challenges</h2>
+                <p class="text-gray-600 mt-4">Devotees, pilgrims, and farmers face friction converting currencies and managing cross-border revenue. The missing piece is financial integration.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <div class="text-amber-600 font-bold mb-2"><i class="fa-solid fa-plane-departure mr-2"></i>American Pilgrim</div>
+                    <p class="text-sm text-gray-600">Visits holy pilgrimage sites every year but struggles to convert currency and make local payments easily.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <div class="text-amber-600 font-bold mb-2"><i class="fa-solid fa-om mr-2"></i>Russian Monk</div>
+                    <p class="text-sm text-gray-600">Lives for study and volunteer service at the temple in Moscow, needing dependable livelihood support.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
+                    <div class="text-amber-600 font-bold mb-2"><i class="fa-solid fa-seedling mr-2"></i>Brazilian Farmer</div>
+                    <p class="text-sm text-gray-600">Needs to export rural produce to interior networks with transparent foreign revenue handling.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gray-900 text-white p-8 lg:p-12 rounded-3xl shadow-xl">
+                <div>
+                    <span class="bg-amber-500 text-gray-950 text-xs font-bold px-3 py-1 rounded-full uppercase">Stellar-Based Solution</span>
+                    <h3 class="cinzel text-3xl font-bold mt-4 mb-4">ISKCON Wallet & Bhakti Currency</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Focused on financial inclusion, the Stellar-based solution enables remote access to the spiritual economy: education, commerce, tourism, and rural projects.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-amber-400 mr-3"></i><span>Fiat/Stellar/Fiat instant conversion (Pix, UPI, SEPA, FedNow)</span></li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-amber-400 mr-3"></i><span>Bhakti Currency cashback & app wallet integration</span></li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-amber-400 mr-3"></i><span>Marketplace for ethical goods and devotional service rewards</span></li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 space-y-4">
+                    <h4 class="cinzel font-bold text-amber-400 text-lg">Bhakti Currency (BKT)</h4>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        "Bhakti", from Sanskrit, means "Love." A cryptocurrency minted on Stellar, with a deflationary value designed to foster membership, reward volunteers (Proof of Bhakti), and fund spiritual projects transparently.
+                    </p>
+                    <div class="pt-2 border-t border-gray-700 text-xs text-gray-400 flex justify-between items-center">
+                        <span><strong>Business Models:</strong> B2C | P2P | DeFi</span>
+                        <a href="whitepaper.html" class="text-amber-400 hover:underline font-bold">View Whitepaper →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="opportunity" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-amber-600 font-bold tracking-widest uppercase text-sm block mb-2">04 — Market Opportunity</span>
+                    <h2 class="cinzel text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Digitizing an Existing Economy</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        The market opportunity lies in unifying and optimizing the flow of value within a global community that has existed and been economically active for <strong>59 years</strong>, but is fragmented by traditional financial systems.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        We are not creating a market from scratch, but rather digitizing and integrating an already functioning economy, capturing the currency that already flows between members, centers, and projects globally.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-200 space-y-6">
+                    <h3 class="cinzel text-xl font-bold text-gray-900">Ecosystem Integration</h3>
+                    <div class="space-y-4 text-sm text-gray-600">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 font-bold"><i class="fa-solid fa-store"></i></div>
+                            <div><strong>Marketplace:</strong> Ethical goods, literature, spiritual tourism, and organic farm produce.</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 font-bold"><i class="fa-solid fa-award"></i></div>
+                            <div><strong>Proof of Bhakti:</strong> Rewarding devotional service and volunteer work with $BKT.</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 font-bold"><i class="fa-solid fa-globe"></i></div>
+                            <div><strong>Global Gateways:</strong> Seamless multi-currency conversion and international card payments.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="text-amber-600 font-bold tracking-widest uppercase text-sm block mb-2">05 — Leadership & Expertise</span>
+                <h2 class="cinzel text-3xl sm:text-4xl font-bold text-gray-900">Project Founders & Core Team</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Flavio Furtado -->
+                <div class="bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="flex flex-col sm:flex-row items-center gap-6">
+                        <div class="w-32 h-32 rounded-2xl overflow-hidden border-4 border-amber-400 shrink-0 shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop" alt="Flavio Furtado" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/111827/FACC15?text=Flavio+Furtado'">
+                        </div>
+                        <div class="space-y-3 text-center sm:text-left">
+                            <span class="bg-amber-500 text-gray-950 text-xs font-bold px-2.5 py-1 rounded uppercase">Project Creator</span>
+                            <h3 class="cinzel text-2xl font-bold">Flavio Furtado</h3>
+                            <p class="text-amber-400 text-sm font-medium">Creative Entrepreneur & Web3 Specialist</p>
+                            <p class="text-gray-300 text-xs leading-relaxed">
+                                Degree in Creative Direction from Miami Ad School SP. Founder of Parampara Game Studio (runner-up Startup of the Year 2024 by HackerNoon), Best Narrative Award winner for <em>Ghostein</em>, and creator of sustainable RWA solutions like Pyrolyzer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-gray-700 flex flex-wrap gap-3 text-xs text-amber-300 justify-center sm:justify-between font-medium">
+                        <span><i class="fa-brands fa-instagram mr-1"></i>@flavioparah</span>
+                        <span><i class="fa-brands fa-discord mr-1"></i>Flavio Parampará#0997</span>
+                        <span><i class="fa-solid fa-phone mr-1"></i>+55 91 98194 3695</span>
+                    </div>
+                </div>
+
+                <!-- Sesa (Sesa das / Core Team CV) -->
+                <div class="bg-gradient-to-br from-amber-950 to-gray-900 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="flex flex-col sm:flex-row items-center gap-6">
+                        <div class="w-32 h-32 rounded-2xl overflow-hidden border-4 border-amber-400 shrink-0 shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop" alt="Sesa das" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x400/D97706/FEFCE8?text=Sesa+das'">
+                        </div>
+                        <div class="space-y-3 text-center sm:text-left">
+                            <span class="bg-amber-500 text-gray-950 text-xs font-bold px-2.5 py-1 rounded uppercase">Senior Advisor & Strategist</span>
+                            <h3 class="cinzel text-2xl font-bold">Sesa das</h3>
+                            <p class="text-amber-400 text-sm font-medium">Spiritual Governance & Institutional Relations</p>
+                            <p class="text-gray-300 text-xs leading-relaxed">
+                                Over 30 years of experience in international community building, temple administration, and interfaith dialogue within ISKCON globally. Expert in sustainable farm management, ethical economics, and bridging traditional Vedic culture with modern institutional structures.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-amber-900/50 flex flex-wrap gap-3 text-xs text-amber-300 justify-center sm:justify-between font-medium">
+                        <span><i class="fa-solid fa-landmark mr-1"></i>ISKCON Global Board Relations</span>
+                        <span><i class="fa-solid fa-earth-americas mr-1"></i>International Outreach</span>
+                        <span><i class="fa-solid fa-envelope mr-1"></i>sesa@iskconwallet.org</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-full bg-amber-500 flex items-center justify-center font-black cinzel text-gray-900 text-sm shadow">
+                    <i class="fa-solid fa-om"></i>
+                </div>
+                <span class="cinzel font-bold text-white tracking-wider">ISKCON WALLET & BHAKTI CURRENCY</span>
+            </div>
+            <div class="flex items-center space-x-6 text-sm">
+                <a href="whitepaper.html" class="hover:text-amber-400 transition">Whitepaper</a>
+                <a href="#vision" class="hover:text-amber-400 transition">Vision</a>
+                <a href="#founder" class="hover:text-amber-400 transition">Founders</a>
+            </div>
+            <div class="text-xs text-gray-500 text-center md:text-right">
+                <p>&copy; 2026 ISKCON Wallet Project. Powered by Stellar Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
