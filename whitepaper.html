@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitepaper Versão IV | Bhakti Coin & ISKCON Wallet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGold: '#FACC15',
+                        brandDark: '#111827',
+                        brandYellowBg: '#FEFCE8',
+                        brandSaffron: '#D97706',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .cinzel { font-family: 'Cinzel', serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-amber-200 selection:text-gray-900">
+
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center font-black cinzel text-white shadow-md">
+                    <i class="fa-solid fa-om text-gray-900"></i>
+                </div>
+                <div>
+                    <span class="cinzel font-bold text-base tracking-wider text-gray-900 block leading-tight">BHAKTI COIN</span>
+                    <span class="text-[10px] text-amber-600 font-semibold tracking-widest uppercase">Whitepaper Versão IV</span>
+                </div>
+            </a>
+            <a href="index.html" class="bg-gray-900 hover:bg-gray-800 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition flex items-center space-x-2 shadow">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
+        
+        <!-- Header -->
+        <div class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-gray-200 space-y-6 text-center">
+            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase">#STELLARIDEATHON</span>
+            <h1 class="cinzel text-3xl sm:text-5xl font-black text-gray-900">Bhakti Coin Whitepaper</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto text-base">
+                Official Technical Specification, Tokenomics, and Governance Architecture for the Global Spiritual Economy.
+            </p>
+            <div class="flex justify-center gap-4 pt-2">
+                <a href="#resumo" class="text-sm font-bold text-amber-600 hover:underline">1. Executive Summary</a>
+                <span class="text-gray-300">•</span>
+                <a href="#tokenomics" class="text-sm font-bold text-amber-600 hover:underline">5. Tokenomics</a>
+                <span class="text-gray-300">•</span>
+                <a href="#roadmap" class="text-sm font-bold text-amber-600 hover:underline">8. Roadmap</a>
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="resumo" class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-gray-200 space-y-4">
+            <h2 class="cinzel text-2xl font-bold text-gray-900 border-b border-gray-100 pb-3">1. Resumo Executivo</h2>
+            <p class="text-gray-700 leading-relaxed">
+                <strong>Visão:</strong> A Bhakti Coin ($BKT) é uma criptomoeda que une comunidades espiritualistas (evangélicas, vaishnavas, budistas) e sustentáveis em uma economia ética na rede Stellar, promovendo colaboração, transparência e impacto global.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                <strong>Missão:</strong> Criar um ecossistema descentralizado que recompense ações espirituais e sustentáveis via Proof of Bhakti (PoB), facilite trocas éticas no Marketplace de Impacto, financie projetos sociais via NFTs de Propósito e coordene comunidades diversas via DAO.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-gray-200 space-y-6">
+            <h2 class="cinzel text-2xl font-bold text-gray-900 border-b border-gray-100 pb-3">2. Introdução & Arquitetura do Ecossistema</h2>
+            <p class="text-gray-700 leading-relaxed">
+                A Bhakti Coin ($BKT) combina blockchain com espiritualidade e sustentabilidade, unindo comunidades evangélicas, vaishnavas, budistas e seculares em uma economia circular construída na rede Stellar.
+            </p>
+            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center space-y-4">
+                <div class="font-bold text-gray-900 cinzel">Diagrama do Ecossistema</div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-semibold">
+                    <div class="bg-amber-100 text-amber-900 p-4 rounded-xl">Proof of Bhakti (Recompensas PoB)</div>
+                    <div class="bg-amber-100 text-amber-900 p-4 rounded-xl">Marketplace de Impacto (Bens & Serviços)</div>
+                    <div class="bg-amber-100 text-amber-900 p-4 rounded-xl">NFTs de Propósito & DAO (Governança)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 & 4 -->
+        <section class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-gray-200 space-y-4">
+            <h2 class="cinzel text-2xl font-bold text-gray-900 border-b border-gray-100 pb-3">3 & 4. Problema, Solução e Tecnologia Stellar</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Comunidades espirituais enfrentam financiamento centralizado, opacidade e subvalorização de contribuições voluntárias. A Stellar resolve esses gargalos com transações instantâneas (3-5s), taxas irrisórias e compatibilidade ISO 20022, utilizando contratos inteligentes Soroban.
+            </p>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="tokenomics" class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-gray-200 space-y-6">
+            <h2 class="cinzel text-2xl font-bold text-gray-900 border-b border-gray-100 pb-3">5. Tokenomics</h2>
+            <p class="text-gray-700">Fornecimento total de <strong>1 bilhão de $BKT</strong> (não inflacionário).</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-gray-600">
+                    <thead class="bg-gray-100 text-gray-900 uppercase text-xs">
+                        <tr>
+                            <th class="p-3 rounded-l-xl">Categoria</th>
+                            <th class="p-3">Porcentagem</th>
+                            <th class="p-3 rounded-r-xl">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr><td class="p-3 font-bold text-gray-900">Recompensas PoB</td><td class="p-3 text-amber-600 font-bold">35%</td><td class="p-3">Para ações espirituais e sustentáveis (cultos, voluntariado).</td></tr>
+                        <tr><td class="p-3 font-bold text-gray-900">Desenvolvimento</td><td class="p-3 text-amber-600 font-bold">25%</td><td class="p-3">Tecnologia, segurança, liquidez inicial.</td></tr>
+                        <tr><td class="p-3 font-bold text-gray-900">Reserva / Liquidez</td><td class="p-3 text-amber-600 font-bold">15%</td><td class="p-3">Estabilidade em exchanges e emergências.</td></tr>
+                        <tr><td class="p-3 font-bold text-gray-900">Marketing / Parcerias</td><td class="p-3 text-amber-600 font-bold">10%</td><td class="p-3">Expansão e colaborações com igrejas e templos.</td></tr>
+                        <tr><td class="p-3 font-bold text-gray-900">Equipe Fundadora</td><td class="p-3 text-amber-600 font-bold">10%</td><td class="p-3">Com vesting de longo prazo.</td></tr>
+                        <tr><td class="p-3 font-bold text-gray-900">Fundo Regenerativo</td><td class="p-3 text-amber-600 font-bold">5%</td><td class="p-3">Projetos sociais, ambientais e suporte comunitário.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 6, 7 & 8 -->
+        <section id="roadmap" class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-gray-200 space-y-6">
+            <h2 class="cinzel text-2xl font-bold text-gray-900 border-b border-gray-100 pb-3">6, 7 & 8. Roteiro & Fundo Regenerativo</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-2">
+                    <div class="font-bold text-gray-900">Q1 2026</div>
+                    <p class="text-gray-600">Finalizar whitepaper, auditar contratos inteligentes.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-2">
+                    <div class="font-bold text-gray-900">Q2 2026</div>
+                    <p class="text-gray-600">Lançamento do portal web e expansão para 1.000 membros.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-2">
+                    <div class="font-bold text-gray-900">Q3 2026</div>
+                    <p class="text-gray-600">Beta do PoB em igrejas evangélicas, templos e ONGs.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 space-y-2">
+                    <div class="font-bold text-gray-900">2027</div>
+                    <p class="text-gray-600">Lançamento oficial da $BKT, Marketplace e DAO.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center pt-8">
+            <a href="index.html" class="inline-flex items-center space-x-2 bg-amber-500 hover:bg-amber-400 text-gray-950 font-bold px-8 py-4 rounded-xl shadow transition">
+                <i class="fa-solid fa-house"></i>
+                <span>Return to ISKCON Wallet Home</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800 mt-20">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-3 text-xs text-gray-500">
+            <p>&copy; 2026 ISKCON Wallet Project. Powered by Stellar Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
